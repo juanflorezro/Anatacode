@@ -1,0 +1,25 @@
+.intro {
+  padding-block: var(--space-9) var(--space-7);
+}
+
+.title {
+  max-width: 700px;
+  margin-block: var(--space-4) var(--space-4);
+}
+
+.text {
+  max-width: 600px;
+  font-size: var(--text-body-lg);
+}
+
+.section {
+  padding-bottom: var(--space-9);
+}
+
+.cardTitle {
+  margin-bottom: var(--space-2);
+}
+
+.cardText {
+  font-size: var(--text-small);
+}

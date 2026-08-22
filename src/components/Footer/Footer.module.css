@@ -1,0 +1,68 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-10);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-7);
+  justify-content: space-between;
+  padding-block: var(--space-7);
+}
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.brandWord {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.brandAccent {
+  color: var(--color-accent);
+}
+
+.tagline {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--color-text-faint);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.links a:hover {
+  color: var(--color-accent);
+}
+
+.contact {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.contact a:hover {
+  color: var(--color-accent);
+}
+
+.bottom {
+  padding-bottom: var(--space-6);
+  font-size: var(--text-small);
+  color: var(--color-text-faint);
+}

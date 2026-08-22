@@ -1,0 +1,108 @@
+.section {
+  padding-block: var(--space-9);
+}
+
+.intro {
+  max-width: 640px;
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  margin-block: var(--space-4);
+}
+
+.text {
+  font-size: var(--text-body-lg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--color-text-muted);
+}
+
+.field input,
+.field textarea {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  resize: vertical;
+  transition: border-color 0.15s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.form > button {
+  align-self: flex-start;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.directCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  height: 100%;
+}
+
+.directTitle {
+  margin-bottom: 0;
+}
+
+.directText {
+  font-size: var(--text-small);
+}
+
+.directEmail {
+  font-family: var(--font-mono);
+  font-size: var(--text-body);
+  color: var(--color-accent);
+  margin-top: var(--space-2);
+}
+
+.directEmail:hover {
+  text-decoration: underline;
+}
+
+.directNote {
+  font-size: var(--text-small);
+  color: var(--color-text-faint);
+  margin-top: auto;
+  padding-top: var(--space-5);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

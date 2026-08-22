@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.heroGhost {
+  position: absolute;
+  top: -90px;
+  right: -80px;
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.heroTitle {
+  max-width: 620px;
+  margin-block: var(--space-4) var(--space-5);
+}
+
+.accentText {
+  color: var(--color-accent);
+}
+
+.heroText {
+  max-width: 540px;
+  font-size: var(--text-body-lg);
+  margin-bottom: var(--space-6);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.section {
+  padding-bottom: var(--space-8);
+}
+
+.pillarGrid {
+  margin-top: 0;
+}
+
+.pillarCard {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pillarTitle {
+  margin-top: var(--space-3);
+}
+
+.pillarText {
+  font-size: var(--text-small);
+}
+
+.sectionTitle {
+  max-width: 560px;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-7);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+.processItem {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+}
+
+.processStep {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+
+.processTitle {
+  margin-bottom: var(--space-2);
+}
+
+.processText {
+  font-size: var(--text-small);
+}
+
+@media (max-width: 860px) {
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+}
