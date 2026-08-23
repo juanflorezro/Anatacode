@@ -22,7 +22,6 @@ const ContactSales = () => {
   return (
     <section className={`container ${styles.section}`}>
       <div className={styles.intro}>
-        <span className="eyebrow">contacto</span>
         <h1 className={styles.title}>Hablemos de tu proyecto.</h1>
         <p className={styles.text}>
           Cuentanos en que estas trabajando y en donde se te esta yendo mas
