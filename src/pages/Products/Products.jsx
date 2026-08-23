@@ -45,7 +45,6 @@ const Products = () => {
   return (
     <>
       <section className={`container ${styles.intro}`}>
-        <span className="eyebrow">soluciones</span>
         <h1 className={styles.title}>Paquetes pensados para necesidades reales.</h1>
         <p className={styles.text}>
           Cada solucion combina el servicio que necesitas con un alcance claro

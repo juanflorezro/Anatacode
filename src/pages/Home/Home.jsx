@@ -43,7 +43,7 @@ const PROCESS = [
 const Home = () => {
   return (
     <>
-      <section className={styles}>
+      <section className={styles.hero}>
         <Logomark
           size={420}
           strokeWidth={7}
@@ -52,7 +52,6 @@ const Home = () => {
           className={styles.heroGhost}
         />
         <div className={`container ${styles.heroInner}`}>
-          <span className="eyebrow">software · integrations · AI</span>
           <h1 className={styles.heroTitle}>
             Conecta todo tu stack.
             <br />
@@ -74,8 +73,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={`container ${styles}`}>
-        <div className={`grid-12 ${styles}`}>
+      <section className={`container ${styles.section}`}>
+        <br />
+        <div className={`grid-12 ${styles.pillarGrid}`}>
           {PILLARS.map((pillar) => (
             <article key={pillar.title} className={`card ${styles.pillarCard}`}>
               <Logomark size={22} strokeWidth={14} color="var(--color-accent)" spark={false} />
@@ -86,12 +86,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={`container ${styles}`}>
-        <span className="eyebrow">como trabajamos</span>
+      <section className={`container ${styles.section}`}>
         <h2 className={styles.sectionTitle}>De la idea al sistema en produccion.</h2>
         <ol className={`${styles.processGrid}`}>
           {PROCESS.map((item) => (
-            <li key={item.step} className={styles}>
+            <li key={item.step} className={styles.processItem}>
               <span className={styles.processStep}>{item.step}</span>
               <h3 className={styles.processTitle}>{item.title}</h3>
               <p className={styles.processText}>{item.text}</p>

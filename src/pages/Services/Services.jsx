@@ -38,11 +38,10 @@ const Services = () => {
   return (
     <>
       <section className={`container ${styles.intro}`}>
-        <span className="eyebrow">servicios</span>
         <h1 className={styles.title}>Todo lo que tu stack necesita, en un mismo equipo.</h1>
         <p className={styles.text}>
           Desde el desarrollo de software propio hasta la integracion de lo
-          que ya usas -- sin fragmentar el trabajo entre distintos proveedores.
+          que ya usas sin fragmentar el trabajo entre distintos proveedores.
         </p>
       </section>
 
@@ -64,7 +63,7 @@ const Services = () => {
       <section className="container cta-band">
         <div>
           <h2>No encuentras exactamente lo que buscas?</h2>
-          <p>Cuentanos tu caso -- casi siempre se resuelve combinando varios de estos servicios.</p>
+          <p>Cuentanos tu caso, casi siempre se resuelve combinando varios de estos servicios.</p>
         </div>
         <NavLink to="/contact-sales" className="btn btn-primary">
           Hablemos

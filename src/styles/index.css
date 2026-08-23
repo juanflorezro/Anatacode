@@ -1,0 +1,32 @@
+/* Punto de entrada de estilos globales. Se importa una sola vez, en main.jsx */
+
+@import './variables.css';
+@import './reset.css';
+@import './utilities.css';
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 560;
+  line-height: var(--lh-tight);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-hero); }
+h2 { font-size: var(--text-h1); }
+h3 { font-size: var(--text-h2); }
+h4 { font-size: var(--text-h3); }
+
+p {
+  color: var(--color-text-muted);
+}
+
+main {
+  flex: 1;
+}

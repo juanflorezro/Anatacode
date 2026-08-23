@@ -20,7 +20,6 @@ const About = () => {
   return (
     <>
       <section className={`container ${styles.section}`}>
-        <span className="eyebrow">nosotros</span>
         <h1 className={styles.title}>
           La tecnologia deberia adaptarse a tu operacion,
           <span className={styles.accentText}> no al reves.</span>
@@ -34,7 +33,7 @@ const About = () => {
           </p>
           <div className={styles.copyCol}>
             <p>
-              Disenamos, desarrollamos e implementamos las soluciones -- y
+              Disenamos, desarrollamos e implementamos las soluciones y
               tambien nos quedamos para mantenerlas funcionando. Trabajamos
               tanto en la construccion de software propio como en conectar
               las herramientas que tu empresa ya usa: CRM, ERP, plataformas
@@ -43,7 +42,7 @@ const About = () => {
             </p>
             <p>
               Prestamos servicios a empresas en Colombia y tambien a clientes
-              internacionales, acompanando desde el analisis inicial hasta la
+              internacionales, acompañando desde el analisis inicial hasta la
               capacitacion del equipo que usara la solucion todos los dias.
             </p>
           </div>
