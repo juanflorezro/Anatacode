@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { useLanguage } from '../../i18n/useLanguage'
 import styles from './ContactSales.module.css'
 
 const initialForm = { name: '', company: '', email: '', message: '' }
 
 const ContactSales = () => {
+  const { t } = useLanguage()
   const [form, setForm] = useState(initialForm)
   const [sent, setSent] = useState(false)
 
@@ -16,31 +18,32 @@ const ContactSales = () => {
     event.preventDefault()
     // TODO: conectar a un backend / servicio de correo real (API propia,
     // Zoho CRM, Formspree, etc). Por ahora solo confirma en pantalla.
+    alert(`Formulario enviado:\n\n${JSON.stringify(form, null, 2)}`)
     setSent(true)
   }
+
+  const firstName = form.name.split(' ')[0] || ''
+  const thanksMessage = t.contact.sentThanksTemplate.replace('{name}', firstName)
 
   return (
     <section className={`container ${styles.section}`}>
       <div className={styles.intro}>
-        <h1 className={styles.title}>Hablemos de tu proyecto.</h1>
-        <p className={styles.text}>
-          Cuentanos en que estas trabajando y en donde se te esta yendo mas
-          tiempo del que deberia. Te respondemos personalmente.
-        </p>
+        <h1 className={styles.title}>{t.contact.title}</h1>
+        <p className={styles.text}>{t.contact.text}</p>
       </div>
 
       <div className={styles.grid}>
         <div className="card">
           {sent ? (
             <div className={styles.confirmation}>
-              <span className="eyebrow">mensaje enviado</span>
-              <h3>Gracias, {form.name.split(' ')[0] || ''}.</h3>
-              <p>Recibimos tu mensaje y te vamos a responder pronto.</p>
+              <span className="eyebrow">{t.contact.sentEyebrow}</span>
+              <h3>{thanksMessage}</h3>
+              <p>{t.contact.sentBody}</p>
             </div>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
               <div className={styles.field}>
-                <label htmlFor="name">Nombre</label>
+                <label htmlFor="name">{t.contact.formName}</label>
                 <input
                   id="name"
                   name="name"
@@ -52,7 +55,7 @@ const ContactSales = () => {
                 />
               </div>
               <div className={styles.field}>
-                <label htmlFor="company">Empresa</label>
+                <label htmlFor="company">{t.contact.formCompany}</label>
                 <input
                   id="company"
                   name="company"
@@ -63,7 +66,7 @@ const ContactSales = () => {
                 />
               </div>
               <div className={styles.field}>
-                <label htmlFor="email">Correo</label>
+                <label htmlFor="email">{t.contact.formEmail}</label>
                 <input
                   id="email"
                   name="email"
@@ -75,7 +78,7 @@ const ContactSales = () => {
                 />
               </div>
               <div className={styles.field}>
-                <label htmlFor="message">Cuentanos tu proyecto</label>
+                <label htmlFor="message">{t.contact.formMessage}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -86,23 +89,19 @@ const ContactSales = () => {
                 />
               </div>
               <button type="submit" className="btn btn-primary">
-                Enviar mensaje
+                {t.contact.formSubmit}
               </button>
             </form>
           )}
         </div>
 
         <div className={`card ${styles.directCard}`}>
-          <h3 className={styles.directTitle}>Prefieres escribir directo?</h3>
-          <p className={styles.directText}>
-            Tambien puedes escribirnos por correo y te respondemos desde ahi.
-          </p>
+          <h3 className={styles.directTitle}>{t.contact.directTitle}</h3>
+          <p className={styles.directText}>{t.contact.directText}</p>
           <a href="mailto:hola@anatacode.com" className={styles.directEmail}>
-            hola@anatacode.com
+            administracion@anatacode.com
           </a>
-          <p className={styles.directNote}>
-            Atendemos clientes en Colombia y tambien proyectos internacionales.
-          </p>
+          <p className={styles.directNote}>{t.contact.directNote}</p>
         </div>
       </div>
     </section>

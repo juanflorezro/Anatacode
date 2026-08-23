@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { LanguageProvider } from './i18n/LanguageContext'
 import Layout from './components/Layout/Layout'
 
 // Paginas
@@ -10,17 +11,19 @@ import ContactSales from './pages/ContactSales/ContactSales'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact-sales" element={<ContactSales />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact-sales" element={<ContactSales />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }
 

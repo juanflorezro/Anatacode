@@ -1,0 +1,126 @@
+/*
+  Utilidades globales reutilizables.
+  Piezas atomicas que se repiten en varias paginas: contenedor, botones,
+  eyebrow, tarjetas base y el grid tipo "bento".
+  El layout especifico de cada seccion vive en el .module.css de esa pagina.
+*/
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Etiqueta tipo comentario de codigo -- se usa como "eyebrow" en cada seccion */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--color-accent);
+  letter-spacing: 0.01em;
+}
+
+.eyebrow::before {
+  content: '//';
+  opacity: 0.6;
+}
+
+/* Botones -- forma pildora, segun el mockup de marca */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: 600;
+  padding: 13px 24px;
+  border-radius: var(--radius-pill);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Tarjeta base -- superficie elevada compartida por bento, servicios, etc. */
+.card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+}
+
+/* Grid de 12 columnas para composiciones tipo bento.
+   Cada pagina define cuantas columnas ocupa cada tarjeta en su propio modulo. */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-5);
+}
+
+@media (max-width: 720px) {
+  .grid-12 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Banda de CTA -- se repite al final de varias paginas */
+.cta-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7);
+  margin-bottom: var(--space-9);
+}
+
+.cta-band-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (max-width: 560px) {
+  .cta-band {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

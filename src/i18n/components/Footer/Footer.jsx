@@ -29,7 +29,7 @@ const Footer = () => {
         </nav>
 
         <div className={styles.contact}>
-          <a href="mailto:administracion@anatacode.com">administracion@anatacode.com</a>
+          <a href="mailto:hola@anatacode.com">hola@anatacode.com</a>
         </div>
       </div>
 
