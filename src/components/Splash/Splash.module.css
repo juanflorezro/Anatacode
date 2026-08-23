@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--color-bg);
+  animation: splash-fade-out 0.35s ease-in forwards;
+  animation-delay: 1.15s;
+  pointer-events: none;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+}
+
+.chevron {
+  stroke-dasharray: 94;
+  stroke-dashoffset: 94;
+  animation: splash-draw 0.55s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.spark1,
+.spark2,
+.spark3 {
+  opacity: 0;
+  transform-origin: center;
+  transform-box: fill-box;
+  transform: scale(0);
+  animation: splash-pop 0.3s ease-out forwards;
+}
+
+.spark1 { animation-delay: 0.4s; }
+.spark2 { animation-delay: 0.47s; }
+.spark3 { animation-delay: 0.54s; }
+
+.wordmark {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: splash-rise 0.4s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+@keyframes splash-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes splash-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes splash-rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes splash-fade-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

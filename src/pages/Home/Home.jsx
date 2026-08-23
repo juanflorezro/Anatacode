@@ -39,6 +39,7 @@ const Home = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
+        <br />
         <div className={`grid-12 ${styles.pillarGrid}`}>
           {t.home.pillars.map((pillar) => (
             <article key={pillar.title} className={`card ${styles.pillarCard}`}>
