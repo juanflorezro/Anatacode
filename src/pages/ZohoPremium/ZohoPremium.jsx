@@ -21,7 +21,6 @@ const ZohoPremium = () => {
           className={styles.heroGhost}
         />
         <div className={`container ${styles.heroInner}`}>
-          <span className="eyebrow">{t.zoho.eyebrow}</span>
           <h1 className={styles.heroTitle}>
             {t.zoho.heroTitleLine1}
             <br />
@@ -40,7 +39,6 @@ const ZohoPremium = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
-        <span className="eyebrow">{t.zoho.appsEyebrow}</span>
         <h2 className={styles.sectionTitle}>{t.zoho.appsTitle}</h2>
         <div className="grid-12">
           {t.zoho.apps.map((app, index) => (
@@ -59,7 +57,6 @@ const ZohoPremium = () => {
       <section className={`container ${styles.detailGrid}`}>
         {t.zoho.sections.map((item) => (
           <div key={item.title} className={styles.detailItem}>
-            <span className="eyebrow">{item.eyebrow}</span>
             <h3 className={styles.detailTitle}>{item.title}</h3>
             <p className={styles.detailText}>{item.text}</p>
           </div>
