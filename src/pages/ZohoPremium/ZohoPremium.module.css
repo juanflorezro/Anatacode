@@ -24,9 +24,6 @@
   margin-block: var(--space-4) var(--space-5);
 }
 
-.accentText {
-  color: var(--color-accent);
-}
 
 .heroText {
   max-width: 560px;

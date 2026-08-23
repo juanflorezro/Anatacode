@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../i18n/useLanguage'
 import Logomark from '../../components/Logomark/Logomark'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './Home.module.css'
 
 const Home = () => {
@@ -14,14 +15,17 @@ const Home = () => {
           strokeWidth={7}
           color="var(--color-accent)"
           spark={false}
-          className={styles.heroGhost}
+          className={`${styles.heroGhost} hero-ghost`}
         />
         <div className={`container ${styles.heroInner}`}>
-          <h1 className={styles.heroTitle}>
-            {t.home.heroTitleLine1}
-            <br />
-            <span className={styles.accentText}>{t.home.heroTitleLine2}</span>
-          </h1>
+          <Typewriter
+            as="h1"
+            className={styles.heroTitle}
+            segments={[
+              { text: t.home.heroTitleLine1 },
+              { text: t.home.heroTitleLine2, accent: true, newLine: true },
+            ]}
+          />
           <p className={styles.heroText}>{t.home.heroText}</p>
           <div className={styles.heroActions}>
             <NavLink to="/contact-sales" className="btn btn-primary">
@@ -35,7 +39,6 @@ const Home = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
-        <br />
         <div className={`grid-12 ${styles.pillarGrid}`}>
           {t.home.pillars.map((pillar) => (
             <article key={pillar.title} className={`card ${styles.pillarCard}`}>
@@ -48,8 +51,7 @@ const Home = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
-        <span className="eyebrow">{t.home.processEyebrow}</span>
-        <h2 className={styles.sectionTitle}>{t.home.processTitle}</h2>
+        <Typewriter as="h2" className={styles.sectionTitle} segments={[{ text: t.home.processTitle }]} />
         <ol className={styles.processGrid}>
           {t.home.process.map((item) => (
             <li key={item.step} className={styles.processItem}>

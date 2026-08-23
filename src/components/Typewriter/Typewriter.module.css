@@ -1,0 +1,34 @@
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.8em;
+  margin-left: 3px;
+  background: var(--color-accent);
+  vertical-align: text-bottom;
+  animation: typewriter-blink 0.85s step-end infinite;
+}
+
+@keyframes typewriter-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.accent {
+  background: linear-gradient(90deg, var(--color-accent) 0%, #f6dfa0 45%, var(--color-accent) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: typewriter-shimmer 5s ease-in-out infinite;
+}
+
+@keyframes typewriter-shimmer {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; opacity: 0; }
+  .accent { animation: none; background-position: 0% center; }
+}

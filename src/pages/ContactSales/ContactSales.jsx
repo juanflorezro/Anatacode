@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLanguage } from '../../i18n/useLanguage'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './ContactSales.module.css'
 
 const initialForm = { name: '', company: '', email: '', message: '' }
@@ -28,7 +29,7 @@ const ContactSales = () => {
   return (
     <section className={`container ${styles.section}`}>
       <div className={styles.intro}>
-        <h1 className={styles.title}>{t.contact.title}</h1>
+        <Typewriter as="h1" className={styles.title} segments={[{ text: t.contact.title }]} />
         <p className={styles.text}>{t.contact.text}</p>
       </div>
 

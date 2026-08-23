@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../i18n/useLanguage'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './About.module.css'
 
 const About = () => {
@@ -8,10 +9,11 @@ const About = () => {
   return (
     <>
       <section className={`container ${styles.section}`}>
-        <h1 className={styles.title}>
-          {t.about.titleMain}
-          <span className={styles.accentText}>{t.about.titleAccent}</span>
-        </h1>
+        <Typewriter
+          as="h1"
+          className={styles.title}
+          segments={[{ text: t.about.titleMain }, { text: t.about.titleAccent, accent: true }]}
+        />
 
         <div className={styles.copyGrid}>
           <p className={styles.lead}>{t.about.lead}</p>
@@ -23,7 +25,7 @@ const About = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
-        <h2 className={styles.sectionTitle}>{t.about.valuesTitle}</h2>
+        <Typewriter as="h2" className={styles.sectionTitle} segments={[{ text: t.about.valuesTitle }]} />
         <div className="grid-12">
           {t.about.values.map((value) => (
             <article key={value.title} className={`card ${styles.valueCard}`}>

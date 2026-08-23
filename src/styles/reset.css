@@ -19,6 +19,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  /* Evita que el navegador reajuste el scroll por su cuenta cuando el
+     contenido cambia de tamano (por ejemplo, al cargar las fuentes) --
+     interfiere con el salto al inicio al cambiar de pagina. */
+  overflow-anchor: none;
 }
 
 img, picture, svg, video {

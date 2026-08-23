@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../i18n/useLanguage'
 import Logomark from '../../components/Logomark/Logomark'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './Products.module.css'
 
 const Products = () => {
@@ -9,7 +10,7 @@ const Products = () => {
   return (
     <>
       <section className={`container ${styles.intro}`}>
-        <h1 className={styles.title}>{t.products.title}</h1>
+        <Typewriter as="h1" className={styles.title} segments={[{ text: t.products.title }]} />
         <p className={styles.text}>{t.products.text}</p>
       </section>
 

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../i18n/useLanguage'
 import Logomark from '../../components/Logomark/Logomark'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './ZohoPremium.module.css'
 
 // 4 en la primera fila, 3 en la segunda, y la ultima (resto del ecosistema)
@@ -18,14 +19,17 @@ const ZohoPremium = () => {
           strokeWidth={7}
           color="var(--color-accent)"
           spark={false}
-          className={styles.heroGhost}
+          className={`${styles.heroGhost} hero-ghost`}
         />
         <div className={`container ${styles.heroInner}`}>
-          <h1 className={styles.heroTitle}>
-            {t.zoho.heroTitleLine1}
-            <br />
-            <span className={styles.accentText}>{t.zoho.heroTitleLine2}</span>
-          </h1>
+          <Typewriter
+            as="h1"
+            className={styles.heroTitle}
+            segments={[
+              { text: t.zoho.heroTitleLine1 },
+              { text: t.zoho.heroTitleLine2, accent: true, newLine: true },
+            ]}
+          />
           <p className={styles.heroText}>{t.zoho.heroText}</p>
           <div className={styles.heroActions}>
             <NavLink to="/contact-sales" className="btn btn-primary">
@@ -39,7 +43,8 @@ const ZohoPremium = () => {
       </section>
 
       <section className={`container ${styles.section}`}>
-        <h2 className={styles.sectionTitle}>{t.zoho.appsTitle}</h2>
+        <br />
+        <Typewriter as="h2" className={styles.sectionTitle} segments={[{ text: t.zoho.appsTitle }]} />
         <div className="grid-12">
           {t.zoho.apps.map((app, index) => (
             <article

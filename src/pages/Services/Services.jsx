@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../i18n/useLanguage'
+import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './Services.module.css'
 
 const SPANS = [7, 5, 5, 7, 6, 6]
@@ -10,7 +11,7 @@ const Services = () => {
   return (
     <>
       <section className={`container ${styles.intro}`}>
-        <h1 className={styles.title}>{t.services.title}</h1>
+        <Typewriter as="h1" className={styles.title} segments={[{ text: t.services.title }]} />
         <p className={styles.text}>{t.services.text}</p>
       </section>
 
