@@ -11,6 +11,7 @@ const en = {
     products: 'Solutions',
     cta: "Let's talk",
     contact: 'Contact',
+    zoho: 'Zoho',
     langLabel: 'Change language',
   },
   footer: {
@@ -190,6 +191,76 @@ const en = {
     directTitle: 'Prefer to write directly?',
     directText: "You can also email us and we'll reply from there.",
     directNote: 'We work with clients in Colombia as well as international projects.',
+  },
+  zoho: {
+    eyebrow: 'zoho premium',
+    heroTitleLine1: 'The whole Zoho ecosystem.',
+    heroTitleLine2: 'Implemented end to end.',
+    heroText:
+      "We implement, integrate, and customize CRM, Books, Creator, Analytics, Flow, and the rest of Zoho -- so your operation runs as one system, not a pile of separate tools.",
+    ctaPrimary: "Let's talk about your implementation",
+    ctaGhost: 'See solutions',
+    appsEyebrow: 'the ecosystem',
+    appsTitle: 'We implement every piece of the ecosystem.',
+    apps: [
+      {
+        title: 'Zoho CRM',
+        text: 'Sales management, pipeline tracking, and automated follow-up with your customers.',
+      },
+      {
+        title: 'Zoho Books',
+        text: 'Accounting, electronic invoicing, and financial reconciliation for your operation.',
+      },
+      {
+        title: 'Zoho Forms',
+        text: 'Custom forms connected directly to the rest of your stack.',
+      },
+      {
+        title: 'Zoho Writer',
+        text: 'Collaborative documents and templates that generate themselves from your data.',
+      },
+      {
+        title: 'Zoho Creator',
+        text: 'Custom applications inside the Zoho ecosystem, without relying on outside development.',
+      },
+      {
+        title: 'Zoho Analytics',
+        text: 'Reports and business intelligence dashboards built from data across your whole operation.',
+      },
+      {
+        title: 'Zoho Flow',
+        text: 'Workflow automation between Zoho and the rest of your tools.',
+      },
+      {
+        title: 'And the rest of the ecosystem',
+        text: 'Desk, Projects, Inventory, People, Campaigns, WorkDrive, Cliq, and other Zoho apps, depending on what your operation needs.',
+      },
+    ],
+    sections: [
+      {
+        eyebrow: 'integrations within zoho',
+        title: 'Getting all your Zoho apps to talk to each other.',
+        text: "We connect CRM with Books, Forms with Creator, Analytics with everything else -- so information flows on its own between the tools you already have, without duplicating work.",
+      },
+      {
+        eyebrow: 'custom functions',
+        title: 'Professional Deluge scripting across the ecosystem.',
+        text: "We write custom functions in Deluge, Zoho's native scripting language, to automate specific business logic: validations, calculations, approval flows, and any rule your operation needs that Zoho doesn't solve out of the box.",
+      },
+      {
+        eyebrow: 'external integrations',
+        title: 'Zoho connected to the rest of your stack.',
+        text: 'We integrate your Zoho ecosystem with external applications -- payment gateways, e-commerce platforms, marketing tools, your own systems, and anything else you already use -- through APIs, webhooks, and connectors.',
+      },
+      {
+        eyebrow: 'support and training',
+        title: "We don't just hand you the tools and leave.",
+        text: 'We support the implementation personally and train your team on every application, so the know-how stays inside your company.',
+      },
+    ],
+    ctaBandTitle: 'Ready to implement Zoho at your company?',
+    ctaBandText: "Tell us which modules you need and we'll put together the implementation plan.",
+    ctaBandButton: "Let's talk",
   },
 }
 

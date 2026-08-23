@@ -25,7 +25,8 @@ const Footer = () => {
           <NavLink to="/about">{t.nav.about}</NavLink>
           <NavLink to="/services">{t.nav.services}</NavLink>
           <NavLink to="/products">{t.nav.products}</NavLink>
-          <NavLink to="/contact-sales">{t.contact.eyebrow}</NavLink>
+          <NavLink to="/zoho">{t.nav.zoho}</NavLink>
+          <NavLink to="/contact-sales">{t.nav.contact}</NavLink>
         </nav>
 
         <div className={styles.contact}>

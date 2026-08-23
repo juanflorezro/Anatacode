@@ -98,7 +98,7 @@ const ContactSales = () => {
         <div className={`card ${styles.directCard}`}>
           <h3 className={styles.directTitle}>{t.contact.directTitle}</h3>
           <p className={styles.directText}>{t.contact.directText}</p>
-          <a href="mailto:hola@anatacode.com" className={styles.directEmail}>
+          <a href="mailto:administracion@anatacode.com" className={styles.directEmail}>
             administracion@anatacode.com
           </a>
           <p className={styles.directNote}>{t.contact.directNote}</p>

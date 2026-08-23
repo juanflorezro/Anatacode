@@ -14,6 +14,7 @@ const Navbar = () => {
     { to: '/about', label: t.nav.about },
     { to: '/services', label: t.nav.services },
     { to: '/products', label: t.nav.products },
+    { to: '/zoho', label: t.nav.zoho },
   ]
 
   const linkClass = ({ isActive }) =>

@@ -97,6 +97,23 @@
   }
 }
 
+/* Clases de span para usar en JSX en vez de inline style -- un inline
+   style siempre gana sobre una regla de hoja de estilos, asi que con
+   inline style el media query de arriba nunca podria angostar la tarjeta
+   a 1 columna en movil. Con clases, si puede. */
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; }
+.span-7 { grid-column: span 7; }
+.span-12 { grid-column: span 12; }
+
+@media (max-width: 720px) {
+  .span-3, .span-4, .span-5, .span-6, .span-7, .span-12 {
+    grid-column: 1 / -1;
+  }
+}
+
 /* Banda de CTA -- se repite al final de varias paginas */
 .cta-band {
   display: flex;

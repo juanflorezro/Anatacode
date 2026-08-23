@@ -11,6 +11,7 @@ const fr = {
     products: 'Solutions',
     cta: 'Discutons',
     contact: 'Contact',
+    zoho: 'Zoho',
     langLabel: 'Changer de langue',
   },
   footer: {
@@ -190,6 +191,76 @@ const fr = {
     directTitle: 'Vous préférez écrire directement ?',
     directText: 'Vous pouvez aussi nous écrire par e-mail, nous vous répondrons directement.',
     directNote: 'Nous accompagnons des clients en Colombie ainsi que des projets internationaux.',
+  },
+  zoho: {
+    eyebrow: 'zoho premium',
+    heroTitleLine1: "Tout l'écosystème Zoho.",
+    heroTitleLine2: 'Implémenté de bout en bout.',
+    heroText:
+      "Nous implémentons, intégrons et personnalisons CRM, Books, Creator, Analytics, Flow et le reste de Zoho -- pour que votre activité fonctionne comme un seul système, pas comme des outils séparés.",
+    ctaPrimary: 'Parlons de votre implémentation',
+    ctaGhost: 'Voir les solutions',
+    appsEyebrow: "l'écosystème",
+    appsTitle: "Nous implémentons chaque brique de l'écosystème.",
+    apps: [
+      {
+        title: 'Zoho CRM',
+        text: 'Gestion commerciale, pipeline de ventes et automatisation du suivi de vos clients.',
+      },
+      {
+        title: 'Zoho Books',
+        text: 'Comptabilité, facturation électronique et rapprochement financier de votre activité.',
+      },
+      {
+        title: 'Zoho Forms',
+        text: 'Formulaires sur mesure connectés directement au reste de votre stack.',
+      },
+      {
+        title: 'Zoho Writer',
+        text: 'Documents collaboratifs et modèles qui se génèrent automatiquement à partir de vos données.',
+      },
+      {
+        title: 'Zoho Creator',
+        text: "Applications sur mesure au sein de l'écosystème Zoho, sans dépendre d'un développement externe.",
+      },
+      {
+        title: 'Zoho Analytics',
+        text: 'Rapports et tableaux de bord de business intelligence à partir des données de toute votre activité.',
+      },
+      {
+        title: 'Zoho Flow',
+        text: 'Automatisation des flux de travail entre Zoho et le reste de vos outils.',
+      },
+      {
+        title: "Et le reste de l'écosystème",
+        text: "Desk, Projects, Inventory, People, Campaigns, WorkDrive, Cliq et d'autres applications Zoho, selon les besoins de votre activité.",
+      },
+    ],
+    sections: [
+      {
+        eyebrow: 'intégrations au sein de zoho',
+        title: 'Faire dialoguer toutes vos applications Zoho.',
+        text: "Nous connectons le CRM à Books, Forms à Creator, Analytics à tout le reste -- pour que l'information circule seule entre les outils que vous avez déjà, sans dupliquer le travail.",
+      },
+      {
+        eyebrow: 'fonctions personnalisées',
+        title: "Du Deluge professionnel dans tout l'écosystème.",
+        text: "Nous écrivons des fonctions personnalisées en Deluge, le langage natif de Zoho, pour automatiser une logique métier spécifique : validations, calculs, flux d'approbation et toute règle dont votre activité a besoin et que Zoho ne résout pas nativement.",
+      },
+      {
+        eyebrow: 'intégrations externes',
+        title: 'Zoho connecté au reste de votre stack.',
+        text: "Nous intégrons votre écosystème Zoho à des applications externes -- passerelles de paiement, plateformes e-commerce, outils marketing, systèmes propres et tout autre service que vous utilisez déjà -- via des API, des webhooks et des connecteurs.",
+      },
+      {
+        eyebrow: 'support et formation',
+        title: 'Nous ne vous laissons pas seuls avec les outils.',
+        text: "Nous accompagnons l'implémentation avec un support personnalisé et formons votre équipe sur chaque application, pour que le savoir-faire reste dans votre entreprise.",
+      },
+    ],
+    ctaBandTitle: 'Prêt à implémenter Zoho dans votre entreprise ?',
+    ctaBandText: "Dites-nous quels modules vous avez besoin et nous préparerons le plan d'implémentation.",
+    ctaBandButton: 'Discutons',
   },
 }
 

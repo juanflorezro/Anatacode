@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.heroGhost {
+  position: absolute;
+  top: -80px;
+  right: -70px;
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.heroTitle {
+  max-width: 660px;
+  margin-block: var(--space-4) var(--space-5);
+}
+
+.accentText {
+  color: var(--color-accent);
+}
+
+.heroText {
+  max-width: 560px;
+  font-size: var(--text-body-lg);
+  margin-bottom: var(--space-6);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.section {
+  padding-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  max-width: 600px;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-7);
+}
+
+.appCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.appTitle {
+  margin-top: var(--space-3);
+}
+
+.appText {
+  font-size: var(--text-small);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8) var(--space-7);
+  padding-block: var(--space-8) var(--space-9);
+  border-top: 1px solid var(--color-border);
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.detailTitle {
+  margin-top: 0;
+}
+
+.detailText {
+  max-width: 480px;
+}
+
+@media (max-width: 860px) {
+  .detailGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}

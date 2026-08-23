@@ -11,6 +11,7 @@ const ca = {
     products: 'Solucions',
     cta: 'Parlem-ne',
     contact: 'Contacte',
+    zoho: 'Zoho',
     langLabel: "Canviar d'idioma",
   },
   footer: {
@@ -190,6 +191,76 @@ const ca = {
     directTitle: 'Prefereixes escriure directament?',
     directText: "També ens pots escriure per correu i et responem des d'allà.",
     directNote: 'Atenem clients a Colòmbia i també projectes internacionals.',
+  },
+  zoho: {
+    eyebrow: 'zoho premium',
+    heroTitleLine1: "Tot l'ecosistema Zoho.",
+    heroTitleLine2: 'Implementat de punta a punta.',
+    heroText:
+      "Implementem, integrem i personalitzem CRM, Books, Creator, Analytics, Flow i la resta de Zoho -- perquè la teva operació funcioni com un sol sistema, no com a eines soltes.",
+    ctaPrimary: 'Parlem de la teva implementació',
+    ctaGhost: 'Veure solucions',
+    appsEyebrow: "l'ecosistema",
+    appsTitle: "Implementem cada peça de l'ecosistema.",
+    apps: [
+      {
+        title: 'Zoho CRM',
+        text: 'Gestió comercial, pipeline de vendes i automatització del seguiment als teus clients.',
+      },
+      {
+        title: 'Zoho Books',
+        text: 'Comptabilitat, facturació electrònica i conciliació financera de la teva operació.',
+      },
+      {
+        title: 'Zoho Forms',
+        text: 'Formularis a mida connectats directament amb la resta del teu stack.',
+      },
+      {
+        title: 'Zoho Writer',
+        text: "Documents col·laboratius i plantilles que es generen soles a partir de les teves dades.",
+      },
+      {
+        title: 'Zoho Creator',
+        text: 'Aplicacions a mida dins de l\u2019ecosistema Zoho, sense dependre de desenvolupament extern.',
+      },
+      {
+        title: 'Zoho Analytics',
+        text: 'Informes i taulers d\u2019intel·ligència de negoci amb dades de tota la teva operació.',
+      },
+      {
+        title: 'Zoho Flow',
+        text: 'Automatització de fluxos de treball entre Zoho i la resta de les teves eines.',
+      },
+      {
+        title: 'I la resta de l\u2019ecosistema',
+        text: 'Desk, Projects, Inventory, People, Campaigns, WorkDrive, Cliq i altres aplicacions de Zoho, segons el que necessiti la teva operació.',
+      },
+    ],
+    sections: [
+      {
+        eyebrow: 'integracions dins de zoho',
+        title: 'Que totes les teves apps de Zoho es parlin entre elles.',
+        text: 'Connectem el CRM amb Books, Forms amb Creator, Analytics amb tota la resta -- perquè la informació flueixi sola entre les eines que ja tens, sense duplicar feina.',
+      },
+      {
+        eyebrow: 'funcions personalitzades',
+        title: 'Deluge professional a tot l\u2019ecosistema.',
+        text: 'Escrivim funcions personalitzades en Deluge, el llenguatge natiu de Zoho, per automatitzar lògica de negoci específica: validacions, càlculs, fluxos d\u2019aprovació i qualsevol regla que la teva operació necessiti i que Zoho no resolgui de fàbrica.',
+      },
+      {
+        eyebrow: 'integracions externes',
+        title: 'Zoho connectat amb la resta del teu stack.',
+        text: 'Integrem el teu ecosistema Zoho amb aplicacions externes -- passarel·les de pagament, plataformes d\u2019e-commerce, eines de màrqueting, sistemes propis i qualsevol servei amb què ja treballis -- mitjançant APIs, webhooks i connectors.',
+      },
+      {
+        eyebrow: 'suport i formació',
+        title: 'No et deixem sol amb les eines.',
+        text: 'Acompanyem la implementació amb suport personalitzat i formem el teu equip en cada aplicació, perquè el coneixement es quedi a la teva empresa.',
+      },
+    ],
+    ctaBandTitle: 'Preparat per implementar Zoho a la teva empresa?',
+    ctaBandText: "Explica'ns quins mòduls necessites i preparem el pla d'implementació.",
+    ctaBandButton: 'Parlem-ne',
   },
 }
 

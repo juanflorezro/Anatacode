@@ -19,8 +19,7 @@ const Services = () => {
           {t.services.items.map((service, index) => (
             <article
               key={service.title}
-              className="card"
-              style={{ gridColumn: `span ${SPANS[index] ?? 6}` }}
+              className={`card span-${SPANS[index] ?? 6}`}
             >
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardText}>{service.text}</p>
