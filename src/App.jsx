@@ -9,6 +9,7 @@ import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Products from './pages/Products/Products'
 import ZohoPremium from './pages/ZohoPremium/ZohoPremium'
+import CaseStudies from './pages/CaseStudies/CaseStudies'
 import ContactSales from './pages/ContactSales/ContactSales'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/products" element={<Products />} />
             <Route path="/zoho" element={<ZohoPremium />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/contact-sales" element={<ContactSales />} />
           </Route>
         </Routes>

@@ -12,6 +12,7 @@ const es = {
     cta: 'Hablemos',
     contact: 'Contacto',
     zoho: 'Zoho',
+    cases: 'Casos',
     langLabel: 'Cambiar idioma',
   },
   footer: {
@@ -182,6 +183,7 @@ const es = {
     text: 'Cuéntanos en qué estás trabajando y en dónde se te está yendo más tiempo del que debería. Te respondemos personalmente.',
     formName: 'Nombre',
     formCompany: 'Empresa',
+    formPhone: 'Teléfono (opcional)',
     formEmail: 'Correo',
     formMessage: 'Cuéntanos tu proyecto',
     formSubmit: 'Enviar mensaje',
@@ -260,6 +262,54 @@ const es = {
     ],
     ctaBandTitle: '¿Listo para implementar Zoho en tu empresa?',
     ctaBandText: 'Cuéntanos qué módulos necesitas y armamos el plan de implementación.',
+    ctaBandButton: 'Hablemos',
+  },
+  cases: {
+    eyebrow: 'casos de uso',
+    title: 'Todo esto, para un mismo cliente.',
+    intro:
+      'Un cliente con una operación en varios frentes -- ventas, facturación, atención al cliente y una aplicación propia para su negocio -- nos buscó porque cada frente vivía por separado, sin comunicarse entre sí. Esto es un resumen de lo que construimos para conectar toda su operación, contado en las 4 áreas en las que trabajamos.',
+    items: [
+      {
+        title: 'Ecosistema Zoho completo',
+        context:
+          'Necesitaba que la parte comercial y financiera de su operación viviera dentro de un mismo sistema: desde la generación de contratos hasta la facturación y los reportes gerenciales.',
+        work: 'Implementamos el flujo de punta a punta: Zoho CRM como base comercial, formularios personalizados para contratos conectados directamente a Zoho Writer para generarlos automáticamente, Zoho Flow disparando las automatizaciones entre módulos, Zoho Books encargándose de la facturación automática, Zoho Analytics con consultas SQL personalizadas y gráficos detallados para los reportes gerenciales, y Zoho Creator para portales internos a la medida.',
+        result:
+          'La operación dejó de estar repartida entre módulos sueltos y pasó a funcionar como un solo sistema, desde que entra un contrato hasta que se factura y se reporta.',
+      },
+      {
+        title: 'Agentes de IA para tareas repetitivas',
+        context:
+          'El procesamiento de facturas, la actualización de datos a partir de correos entrantes y el seguimiento comercial consumían tiempo del equipo sin requerir verdadero criterio humano en cada caso.',
+        work: 'Diseñamos agentes de IA capaces de razonar y dispararse por evento: procesan facturas automáticamente, leen correos entrantes y actualizan los datos correspondientes en el sistema central, y dan seguimiento al área comercial y de ventas sin intervención manual paso a paso.',
+        result:
+          'Las tareas repetitivas de mayor volumen dejaron de depender de que alguien las hiciera una por una, liberando tiempo del equipo para el trabajo que sí requiere criterio humano.',
+      },
+      {
+        title: 'API de orquestación continua',
+        context:
+          'Varias de sus aplicaciones debían mantenerse coordinadas en un proceso de operación continua, sin que nada centralizara la supervisión entre ellas.',
+        work: 'Desarrollamos una API propia que se conecta a cada aplicación del proceso, consume y coordina los recursos entre ellas, y queda en seguimiento continuo del estado completo -- no una integración de una sola vez, sino una capa de orquestación siempre activa.',
+        result:
+          'El proceso completo queda supervisado en todo momento; un desajuste entre aplicaciones se detecta como parte del mismo flujo, no cuando alguien lo nota por accidente.',
+      },
+      {
+        title: 'MCP personalizado',
+        context:
+          'Además de Zoho, el cliente tenía una aplicación propia y externa donde el monitoreo, los reportes y los ajustes diarios dependían de que alguien entrara manualmente a revisar y decidir.',
+        work: 'Construimos un servidor MCP (Model Context Protocol) a medida que conecta esa aplicación directamente con un asistente de IA, permitiendo monitorear el estado del sistema, generar reportes, apoyar la toma de decisiones, hacer ajustes y configuraciones rápidas, y guiar la entrada de datos -- todo conversando con la IA en vez de navegar pantalla por pantalla.',
+        result:
+          'El equipo del cliente opera su propia aplicación a través de la IA, aprovechándola no solo para responder preguntas sino para actuar sobre el sistema real.',
+      },
+    ],
+    closing:
+      'Hoy, su operación funciona conectada de punta a punta -- desde que entra un contrato o un correo, hasta que se factura, se reporta, y su propia aplicación se administra con IA.',
+    contextLabel: 'contexto',
+    workLabel: 'qué hicimos',
+    resultLabel: 'resultado',
+    ctaBandTitle: '¿Tu operación se parece a esto?',
+    ctaBandText: 'Cuéntanos en qué frentes está repartida tu operación y vemos por dónde empezar.',
     ctaBandButton: 'Hablemos',
   },
 }

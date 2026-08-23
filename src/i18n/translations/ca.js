@@ -12,6 +12,7 @@ const ca = {
     cta: 'Parlem-ne',
     contact: 'Contacte',
     zoho: 'Zoho',
+    cases: 'Casos',
     langLabel: "Canviar d'idioma",
   },
   footer: {
@@ -182,6 +183,7 @@ const ca = {
     text: "Explica'ns en què estàs treballant i on se't està anant més temps del que hauria. Et responem personalment.",
     formName: 'Nom',
     formCompany: 'Empresa',
+    formPhone: 'Telèfon (opcional)',
     formEmail: 'Correu',
     formMessage: "Explica'ns el teu projecte",
     formSubmit: 'Envia el missatge',
@@ -260,6 +262,54 @@ const ca = {
     ],
     ctaBandTitle: 'Preparat per implementar Zoho a la teva empresa?',
     ctaBandText: "Explica'ns quins mòduls necessites i preparem el pla d'implementació.",
+    ctaBandButton: 'Parlem-ne',
+  },
+  cases: {
+    eyebrow: "casos d'ús",
+    title: 'Tot això, per a un mateix client.',
+    intro:
+      "Un client amb una operació repartida en diversos fronts -- vendes, facturació, atenció al client i una aplicació pròpia per al seu negoci -- ens va buscar perquè cada front vivia per separat, sense comunicar-se entre ells. Aquest és un resum del que vam construir per connectar tota la seva operació, explicat a través de les 4 àrees en què vam treballar.",
+    items: [
+      {
+        title: "Ecosistema Zoho complet",
+        context:
+          "Necessitava que la part comercial i financera de la seva operació visqués dins d'un mateix sistema: des de la generació de contractes fins a la facturació i els informes de gestió.",
+        work: "Vam implementar el flux de punta a punta: Zoho CRM com a base comercial, formularis personalitzats per a contractes connectats directament a Zoho Writer per generar-los automàticament, Zoho Flow disparant les automatitzacions entre mòduls, Zoho Books encarregant-se de la facturació automàtica, Zoho Analytics amb consultes SQL personalitzades i gràfics detallats per als informes de gestió, i Zoho Creator per a portals interns a mida.",
+        result:
+          "L'operació va deixar d'estar repartida entre mòduls solts i va passar a funcionar com un sol sistema, des que entra un contracte fins que es factura i es reporta.",
+      },
+      {
+        title: "Agents d'IA per a tasques repetitives",
+        context:
+          "El processament de factures, l'actualització de dades a partir de correus entrants i el seguiment comercial consumien temps de l'equip sense requerir un criteri humà real en cada cas.",
+        work: "Vam dissenyar agents d'IA capaços de raonar i disparar-se per esdeveniment: processen factures automàticament, llegeixen correus entrants i actualitzen les dades corresponents al sistema central, i fan seguiment de l'àrea comercial i de vendes sense intervenció manual pas a pas.",
+        result:
+          "Les tasques repetitives de més volum van deixar de dependre que algú les fes una per una, alliberant temps de l'equip per a la feina que sí que requereix criteri humà.",
+      },
+      {
+        title: "API d'orquestració contínua",
+        context:
+          "Diverses de les seves aplicacions havien de mantenir-se coordinades en un procés d'operació continu, sense que res centralitzés la supervisió entre elles.",
+        work: "Vam desenvolupar una API pròpia que es connecta a cada aplicació del procés, consumeix i coordina els recursos entre elles, i queda en seguiment continu de l'estat complet -- no una integració d'una sola vegada, sinó una capa d'orquestració sempre activa.",
+        result:
+          "El procés complet queda supervisat en tot moment; un desajust entre aplicacions es detecta com a part del mateix flux, no quan algú ho nota per accident.",
+      },
+      {
+        title: 'MCP personalitzat',
+        context:
+          "A més de Zoho, el client tenia una aplicació pròpia i externa on el monitoratge, els informes i els ajustos diaris depenien que algú entrés manualment a revisar i decidir.",
+        work: "Vam construir un servidor MCP (Model Context Protocol) a mida que connecta aquesta aplicació directament amb un assistent d'IA, permetent monitorar l'estat del sistema, generar informes, donar suport a la presa de decisions, fer ajustos i configuracions ràpides, i guiar l'entrada de dades -- tot conversant amb la IA en comptes de navegar pantalla per pantalla.",
+        result:
+          "L'equip del client opera la seva pròpia aplicació a través de la IA, aprofitant-la no només per respondre preguntes sinó per actuar sobre el sistema real.",
+      },
+    ],
+    closing:
+      "Avui, la seva operació funciona connectada de punta a punta -- des que entra un contracte o un correu, fins que es factura, es reporta, i la seva pròpia aplicació es gestiona amb IA.",
+    contextLabel: 'context',
+    workLabel: 'què vam fer',
+    resultLabel: 'resultat',
+    ctaBandTitle: "La teva operació s'assembla a això?",
+    ctaBandText: "Explica'ns en quins fronts està repartida la teva operació i veiem per on començar.",
     ctaBandButton: 'Parlem-ne',
   },
 }

@@ -12,6 +12,7 @@ const en = {
     cta: "Let's talk",
     contact: 'Contact',
     zoho: 'Zoho',
+    cases: 'Cases',
     langLabel: 'Change language',
   },
   footer: {
@@ -182,6 +183,7 @@ const en = {
     text: "Tell us what you're working on and where you're losing more time than you should. We reply personally.",
     formName: 'Name',
     formCompany: 'Company',
+    formPhone: 'Phone (optional)',
     formEmail: 'Email',
     formMessage: 'Tell us about your project',
     formSubmit: 'Send message',
@@ -260,6 +262,54 @@ const en = {
     ],
     ctaBandTitle: 'Ready to implement Zoho at your company?',
     ctaBandText: "Tell us which modules you need and we'll put together the implementation plan.",
+    ctaBandButton: "Let's talk",
+  },
+  cases: {
+    eyebrow: 'case studies',
+    title: 'All of this, for one client.',
+    intro:
+      "A client with operations spread across several fronts -- sales, billing, customer service, and their own proprietary application -- came to us because each front lived on its own, with no communication between them. Here's a summary of what we built to connect their entire operation, told through the 4 areas we worked on.",
+    items: [
+      {
+        title: 'Full Zoho ecosystem',
+        context:
+          'They needed the commercial and financial side of their operation to live inside one system: from generating contracts to invoicing and management reporting.',
+        work: 'We implemented the flow end to end: Zoho CRM as the commercial base, custom forms for contracts connected directly to Zoho Writer to generate them automatically, Zoho Flow triggering automations between modules, Zoho Books handling automatic invoicing, Zoho Analytics with custom SQL queries and detailed charts for management reports, and Zoho Creator for custom internal portals.',
+        result:
+          "The operation stopped being split across separate modules and started running as a single system, from the moment a contract comes in to invoicing and reporting.",
+      },
+      {
+        title: 'AI agents for repetitive tasks',
+        context:
+          "Invoice processing, updating data from incoming emails, and sales follow-up were eating up the team's time without really requiring human judgment in each case.",
+        work: 'We designed AI agents capable of reasoning and triggering on events: they process invoices automatically, read incoming emails and update the corresponding data in the core system, and follow up on sales and commercial activity without manual, step-by-step intervention.',
+        result:
+          "The highest-volume repetitive tasks stopped depending on someone doing them one by one, freeing up the team's time for work that actually requires human judgment.",
+      },
+      {
+        title: 'Continuous orchestration API',
+        context:
+          'Several of their applications needed to stay coordinated in an ongoing operational process, with nothing centralizing oversight between them.',
+        work: 'We built a custom API that connects to each application in the process, consumes and coordinates resources between them, and keeps continuous track of the overall state -- not a one-time integration, but an always-on orchestration layer.',
+        result:
+          "The whole process stays supervised at all times; a mismatch between applications gets caught as part of the same flow, not when someone happens to notice it.",
+      },
+      {
+        title: 'Custom MCP',
+        context:
+          'Beyond Zoho, the client had their own external application where monitoring, reporting, and daily adjustments depended on someone manually logging in to review and decide.',
+        work: 'We built a custom MCP (Model Context Protocol) server that connects that application directly to an AI assistant, enabling system monitoring, report generation, decision support, quick adjustments and configuration, and more guided data entry -- all by talking to the AI instead of navigating screen by screen.',
+        result:
+          "The client's team now runs their own application through AI, using it not just to answer questions but to act on the real system.",
+      },
+    ],
+    closing:
+      "Today, their operation runs connected end to end -- from the moment a contract or an email comes in, all the way through invoicing, reporting, and their own application being managed by AI.",
+    contextLabel: 'context',
+    workLabel: 'what we built',
+    resultLabel: 'result',
+    ctaBandTitle: 'Does your operation look like this?',
+    ctaBandText: "Tell us which fronts your operation is split across and we'll figure out where to start.",
     ctaBandButton: "Let's talk",
   },
 }

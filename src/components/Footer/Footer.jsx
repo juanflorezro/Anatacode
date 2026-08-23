@@ -26,6 +26,7 @@ const Footer = () => {
           <NavLink to="/services">{t.nav.services}</NavLink>
           <NavLink to="/products">{t.nav.products}</NavLink>
           <NavLink to="/zoho">{t.nav.zoho}</NavLink>
+          <NavLink to="/case-studies">{t.nav.cases}</NavLink>
           <NavLink to="/contact-sales">{t.nav.contact}</NavLink>
         </nav>
 

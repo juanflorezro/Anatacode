@@ -3,7 +3,7 @@ import { useLanguage } from '../../i18n/useLanguage'
 import Typewriter from '../../components/Typewriter/Typewriter'
 import styles from './ContactSales.module.css'
 
-const initialForm = { name: '', company: '', email: '', message: '' }
+const initialForm = { name: '', company: '', phone: '', email: '', message: '' }
 
 const ContactSales = () => {
   const { t } = useLanguage()
@@ -63,6 +63,17 @@ const ContactSales = () => {
                   type="text"
                   autoComplete="organization"
                   value={form.company}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className={styles.field}>
+                <label htmlFor="phone">{t.contact.formPhone}</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autoComplete="tel"
+                  value={form.phone}
                   onChange={handleChange}
                 />
               </div>
