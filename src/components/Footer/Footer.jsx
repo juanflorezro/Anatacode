@@ -31,7 +31,7 @@ const Footer = () => {
         </nav>
 
         <div className={styles.contact}>
-          <a href="mailto:administracion@anatacode.com">administracion@anatacode.com</a>
+          <a href="mailto:administration@anatacode.com">administration@anatacode.com</a>
         </div>
       </div>
 
