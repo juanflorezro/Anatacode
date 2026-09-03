@@ -111,7 +111,7 @@ const ContactSales = () => {
           <h3 className={styles.directTitle}>{t.contact.directTitle}</h3>
           <p className={styles.directText}>{t.contact.directText}</p>
           <a href="mailto:administration@anatacode.com" className={styles.directEmail}>
-            administracion@anatacode.com
+            administration@anatacode.com
           </a>
           <p className={styles.directNote}>{t.contact.directNote}</p>
         </div>
